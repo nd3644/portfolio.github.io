@@ -25,7 +25,7 @@ nav {
 ul {
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 500px;
 }
 
@@ -35,4 +35,16 @@ li {
 
 h1 {
     font-size: 90px;
+}
+
+.hero-text {
+    margin-left: 80px;
+}
+
+.button {
+    width: 200px;
+    height: 56px;
+    border-radius: 30px;
+    background-color: coral;
+    text-align: center;
 }
