@@ -1,34 +1,145 @@
 <!DOCTYPE html>
+
+
+<link rel="stylesheet" href="prism.css">
+<script src="prism.js"></script>
+
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css" />
-        <title>Porta</title> 
-        <meta charset="UTF-8" />
-    </head>
 
-    <body>
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Porta</title>
+    <meta charset="UTF-8" />
+</head>
 
-        <section class="hero">
+<body>
 
-            <nav>
-                <div>LOGO</div>
-                <ul>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-
-            <div class="hero-text">
-                <h1>Nicole Durrant</h1>
-                <p>Code & Maths</p>
+    <section class="hero">
+        <nav>
+            <div>
             </div>
-            <div class="button">About me</div>
-        </section>
-        <section>asd</section>
-        <section>asd</section>
-        <footer></footer>
+            <ul class="navul">
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#accomplishments">Accomplishments</a></li>
+                <li><a href="index.html#contacts">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>Nicole Durrant</h1>
+            <h2>Code &#38; Maths</h2>
+            <p>
+                I'm an aspiring software developer with a passion for mathematics. I've always been fascinated by how
+                code can be used to solve complex problems and bring ideas to life. I've been honing my skills in C/++,
+                Java, Python, and C#, and I'm also exploring Unity. I'm eager to bring my knowledge and enthusiasm to
+                new Android projects.
+                <br><br>
+                Although I'm still early in my career, I've already had the chance to work on a variety of personal
+                projects, including some Android app development. I thrive on the challenges that each new project
+                brings, and I love learning new things along the way. It's what keeps me motivated and engaged.
+                <br><br>
+                On this website, you'll find a showcase of my skills, experience, and projects. I've put together a
+                portfolio growing portfolio of some of my work and I've included a section for my accomplishments too.
+                If you like what you see, or if you have any questions, don't hesitate to get in touch through the
+                contacts page.
+                <br><br>
+                Thanks for stopping by! I hope you enjoy getting to know me and my work.
+            </p>
+        </div>
 
-        <script src="app.js"></script>
-    </body>
+        <hr>
+
+        <!-- Projects  -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div style="display: flex; flex-direction: column;">
+
+                <div style="display: flex;">
+                    <img src="images/tetris1-512.png" alt="image" style="width: 50%;">
+                    <div style="width: 40%; padding: 10px;">
+                        <p>FocusFlow is a personal productivity app for Android</p>
+                    </div>
+                </div>
+
+                <div style="display: flex;">
+                    <img src="images/echess1.png" alt="image" style="width: 50%;">
+                    <div style="width: 40%; padding: 10px;">
+                        <p>eChess is a chess app.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex;">
+                    <img src="images/FocusFlow.png" alt="image" style="width: 50%;">
+                    <div style="width: 40%; padding: 10px;">
+                        <p>FocusFlow is a personal productivity app for Android</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Accomplishments  -->
+    <section id="accomplishments">
+    <hr>
+    <h2>Miscellaneous/Personal accomplishments</h2>
+
+    <ul>
+        <li>KhanAcademy Completion<br>
+            <progress id="file" value="42" max="100"></progress> 42%<br>
+        </li>
+        <br>
+
+        <li>Accomplishment 2<br>
+            This one is less impressive but let's be honest 3 is the minimum
+        </li>
+        <br>
+
+        <li>Accomplishment 3<br>
+            Here is a third. All thirdy.</li>
+            <br>
+    </ul>
+
+    </section>
+
+
+    <!-- Contact  -->
+    <section id="contacts">
+        <hr>
+        <h2>Contacts</h2>
+
+        <a href="mailto:youremail@example.com">
+            <img src="images/gmail.ico" alt="Email icon" style="width: 50px; height:50px">
+        </a>
+        <a href="mailto:youremail@example.com">
+            <img src="images/LI-In-Bug.png" alt="Email icon" style="width: 60px; height:50px">
+        </a>          
+
+        <div class="code-snippet">
+            <pre><code class="language-cpp">
+class Contacts {
+  public:
+    enum ContactTypes {
+      LINKEDIN = 0,
+      TWITTER,
+      CONTACT_COUNT
+    }
+    Contacts() {
+        ContactList[LINKEDIN] = "www.linkedin.com/in/nicole-durrant";
+        ContactList[TWITTER]  = "www.twitter.com/[ADDNAME]";
+        ContactList[EMAIL]    = "wn.durrant@gmail.com"
+    }
+
+  private:
+    std::string ContactList[CONTACT_COUNT];
+};
+              </code></pre>
+          </div>
+    </section>
+    
+    <!-- End projects -->
+
+
+    <footer></footer>
+</body>
+
 </html>

@@ -1,20 +1,12 @@
 section {
-    height: 500px;
-    background-color: white;
-    border: solid black 1px;
-}
-
-
-.hero {
     background-color: darkslategray;
-    height: 100vh;
+    border: solid darkslategray 1px;
     color: white;
-    font-size: 40px;
 }
 
 footer {
     height: 500px;
-    background-color: black;
+    background-color: darkslategray;
 }
 
 nav {
@@ -22,10 +14,10 @@ nav {
     justify-content: space-between;
 }
 
-ul {
+.navul {
     display: flex;
     list-style-type: none;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 500px;
 }
 
@@ -34,11 +26,11 @@ li {
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 40px;
 }
 
 .hero-text {
-    margin-left: 80px;
+    margin-left: 10px;
 }
 
 .button {
@@ -47,4 +39,46 @@ h1 {
     border-radius: 30px;
     background-color: coral;
     text-align: center;
+}
+
+.navbar {
+    text-decoration: none;
+    text-decoration-color: chartreuse;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    max-width: 256px;
+    max-height: 256px;
+    padding-left: 10px;
+}
+
+p {
+    max-width: 1300px;
+}
+
+body {
+    background-color: lightblue;
+    border-left: 100px solid darkslategray;
+    border-right: 100px solid darkslategray;
+}
+
+.code-snippet {
+    background-color: black !important;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+pre {
+    background-color: black !important;
+}
+
+code {
+    font-family: Monaco, Consolas, "Courier New", monospace;
+    font-size: 14px;
+    background-color: black;
 }
