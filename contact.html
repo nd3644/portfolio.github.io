@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+
+<link rel="stylesheet" href="prism.css">
+<script src="prism.js"></script>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Porta</title>
+    <meta charset="UTF-8" />
+</head>
+
+<!---->
+
+<body>
+
+    <nav>
+        <div>
+        </div>
+        <ul class="navul">
+            <li><a href="index.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#accomplishments">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="contacts">
+        <h2>Contact links</h2>
+        <p>The best way to contact me is via email or linkedin but feel free to reach out through whichever links are most convenient.</p>
+        <br>
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <div style="display: flex; align-items:center;">
+                    <a href="https://www.linkedin.com/in/nicole-durrant">
+                        <img src="images/LI-In-Bug.png" alt="Email icon" style="width: 50px; height:50px;">
+                        <p style="display: inline-block; margin-left: 1em;">www.linkedin.com/in/nicole-durrant</p>
+                    </a>
+                </div>
+
+                <div style="display: flex; align-items:center;">
+                    <a href="mailto:wn.durrant@gmail.com">
+                        <img src="images/gmail.ico" alt="Email icon" style="width: 50px; height:50px;">
+                        <p style="display: inline-block; margin-left: 1em;">wn.durrant@gmail.com</p>
+                    </a>
+                </div>
+
+
+            </div>
+            <div>
+                <div class="code-snippet">
+                    <pre><code class="language-cpp">class Contacts {
+    public:
+    enum ContactTypes {
+    LINKEDIN = 0,
+    TWITTER,
+    CONTACT_COUNT
+    }
+    Contacts() {
+    ContactList[LINKEDIN] = "www.linkedin.com/in/nicole-durrant";
+    ContactList[TWITTER]  = "www.twitter.com/[ADDNAME]";
+    ContactList[EMAIL]    = "wn.durrant@gmail.com"
+    }
+    
+    private:
+    std::string ContactList[CONTACT_COUNT];
+    };</code></pre>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+</body>

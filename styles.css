@@ -12,6 +12,7 @@ footer {
 nav {
     display: flex;
     justify-content: space-between;
+    background-color: darkslategray;
 }
 
 .navul {
@@ -62,19 +63,22 @@ p {
 }
 
 body {
-    background-color: lightblue;
-    border-left: 100px solid darkslategray;
-    border-right: 100px solid darkslategray;
+    background-color: #36454f;
+    border-left: 200px solid darkslategray;
+    border-right: 200px solid darkslategray;
+
 }
 
 .code-snippet {
     background-color: black !important;
     border-radius: 10px;
     padding: 1px;
+
 }
 
 pre {
     background-color: black !important;
+    border-top: 50px 0;
 }
 
 code {
