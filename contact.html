@@ -49,22 +49,21 @@
             </div>
             <div>
                 <div class="code-snippet">
-                    <pre><code class="language-cpp">class Contacts {
+                    <pre><code class="language-cpp">
+class Contacts {
     public:
     enum ContactTypes {
-    LINKEDIN = 0,
-    TWITTER,
-    CONTACT_COUNT
-    }
+        LINKEDIN = 0,
+        EMAIL,
+        CONTACT_COUNT
+    };
     Contacts() {
-    ContactList[LINKEDIN] = "www.linkedin.com/in/nicole-durrant";
-    ContactList[TWITTER]  = "www.twitter.com/[ADDNAME]";
-    ContactList[EMAIL]    = "wn.durrant@gmail.com"
+        ContactList[LINKEDIN] = "www.linkedin.com/in/nicole-durrant";
+        ContactList[EMAIL]    = "wn.durrant@gmail.com";
     }
-    
     private:
-    std::string ContactList[CONTACT_COUNT];
-    };</code></pre>
+        std::string ContactList[CONTACT_COUNT];
+};</code></pre>
                 </div>
             </div>
         </div>

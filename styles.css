@@ -66,7 +66,7 @@ body {
     background-color: #36454f;
     border-left: 200px solid darkslategray;
     border-right: 200px solid darkslategray;
-
+    font-family: "Arial", sans-serif;
 }
 
 .code-snippet {
